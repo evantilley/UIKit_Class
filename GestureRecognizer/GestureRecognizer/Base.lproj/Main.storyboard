@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hetfield" translatesAutoresizingMaskIntoConstraints="NO" id="f9b-Vn-9a7">
+                                <rect key="frame" x="28" y="161" width="358" height="286"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Hetfield" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWB-6D-JEj">
+                                <rect key="frame" x="138" y="481" width="138" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="QwP-Yt-44n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pWB-6D-JEj" secondAttribute="bottom" constant="319" id="LhN-Eg-Ogu"/>
+                            <constraint firstItem="pWB-6D-JEj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="YxV-9d-AWK"/>
+                            <constraint firstItem="f9b-Vn-9a7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="Zzl-qf-qd4"/>
+                            <constraint firstItem="f9b-Vn-9a7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="c3F-2t-8Gg"/>
+                            <constraint firstItem="pWB-6D-JEj" firstAttribute="top" secondItem="f9b-Vn-9a7" secondAttribute="bottom" constant="34" id="oDz-8X-TCj"/>
+                            <constraint firstItem="f9b-Vn-9a7" firstAttribute="centerX" secondItem="pWB-6D-JEj" secondAttribute="centerX" id="uHz-mr-qQR"/>
+                            <constraint firstItem="f9b-Vn-9a7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQJ-Jb-wOo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="f9b-Vn-9a7" id="fjT-Q2-Nhe"/>
+                        <outlet property="myLabel" destination="pWB-6D-JEj" id="gsH-Pe-P8L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hetfield" width="1280" height="720"/>
+    </resources>
+</document>
